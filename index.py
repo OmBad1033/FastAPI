@@ -2,9 +2,9 @@ from fastapi import FastAPI,Request
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 
-from routes.note import note
+from routes.route import product
 
 app=FastAPI()
-app.include_router(note)
-app.mount("/static", StaticFiles(directory="static"), name="static")
+app.include_router(product)
+
 
