@@ -1,0 +1,9 @@
+>>python -m venv venv
+>>.\venv\Scripts\activate
+>>pip install fastapi
+>>pip install "uvicorn[standard]"
+>>pip install jinja2       #templates for fastapi
+>>pip install pymongo
+>>pip install python-multipart
+
+>>uvicorn main:app --reload
